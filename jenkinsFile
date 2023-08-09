@@ -6,10 +6,16 @@ pipeline{
                 git("url :https://github.com/harish505/my-first-project.git")
             }
         }
+<<<<<<< HEAD
         stage(''build){
             steps{
                 sh "mvn clean package"
             }
         }
+=======
+        stage('build'){
+            steps{
+                sh"mvn clean package"
+>>>>>>> 5d242d2a44dc0a2c2c38243bba7741477553145e
     }
 }
